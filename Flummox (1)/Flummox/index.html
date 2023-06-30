@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUMMOX</title>
+    <!-- links -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./icon/favicon-32x32.png" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="header">
+        <h1>FLUMMOX</h1>
+    </div>
+
+    <hr class="hori">
+
+
+    <div class="watchbody">
+        <div class="watch">
+            <div class="time">
+                00
+            </div>
+            <div class="controls">
+                <button id="start">START</button>
+                <button id="stop">STOP</button>
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dice">
+
+        <div class="rollbtn">
+            <button class="custom-btn btn-5" onclick="roll_it()"><span>ROLL IT !</span></button>
+        </div>
+
+        <div class="dice">
+            <button class="buthow" onclick="backie()" id="backie">BACK</button>
+            <p class="turntxt" id="turntxt">gray's Turn</p>
+            <button class="buthow" onclick="nextie()" id="nextie">NEXT</button>
+            <button class="buthow" onclick="undoie()" id="undoie">UNDO</button>
+            <img class="img1" src="./images/dice6.png">
+
+        </div>
+
+    </div>
+
+    <div class="vertical"></div>
+
+    <div class="game-board">
+        <div id="main">
+            <div class="players" id="gray"></div>
+            <div class="players" id="yellow"></div>
+            <div class="players" id="green"></div>
+            <div class="players" id="white"></div>
+            <div class="players" id="purple"></div>
+            <div class="players" id="black"></div>
+            <div class="players" id="darkblue"></div>
+            <div class="players" id="pink"></div>
+            <div class="players" id="cyan"></div>
+            <div class="players" id="litegreen"></div>
+            <img src="./images/L1-removebg-preview.png" id="l1">
+            <img src="./images/L2-removebg-preview.png" id="l2">
+            <img src="./images/L3-removebg-preview.png" id="l3">
+            <img src="./images/L4-removebg-preview.png" id="l4">
+            <img src="./images/L5-removebg-preview.png" id="l5">
+            <img src="./images/L6-removebg-preview.png" id="l6">
+            <img src="./images/L6-removebg-preview.png" id="l7">
+            <div class="box" ></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <p style="top:100000000px;position:absolute" id="0"></p>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

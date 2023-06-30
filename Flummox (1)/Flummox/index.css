@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;1,600&display=swap');
+
+body {
+    background: rgb(255, 233, 154);
+    background: linear-gradient(0deg, #52cbb7 0%, #17c3a6 100%);
+
+    /*background: linear-gradient(0deg, rgba(255, 233, 154, 1) 0%, rgba(253, 187, 45, 1) 100%);*/
+    overflow-y: hidden;
+}
+
+.header {
+    color: black;
+    margin-left: 9.5%;
+    font-size: 6mm;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* box start */
+#main {
+    position: absolute;
+    top: 5vh;
+    left: 42.5vw;
+    border: .5px solid black;
+    min-height: 90vh;
+    min-width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #1F6E8C;
+
+}
+
+.box {
+    font-family: "Chakra Petch", "sans-serif";
+    font-weight: 400;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+.game-board {
+    margin-left: 40%;
+}
+
+/* box  end*/
+
+.img1 {
+    float: left;
+    margin-left: 7.5%;
+    margin-bottom: 20%;
+    height: 50mm;
+    transition: all 2s ease-in-out;
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 800;
+    font-size: 90%;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(220, 34, 13);
+    background: linear-gradient(0deg, rgb(220, 31, 10) 0%, rgba(146, 51, 11, 0.865) 100%);
+}
+
+.btn-5:hover {
+    color: #bf0716d4;
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f0094a;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.buthow{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    color: #FFF;
+    background-color: var(--primary);
+
+    transition: 0.4s;
+    user-select: none;
+}
+
+#nextie{
+    float: left;
+}
+
+#backie{
+    float: left;
+}
+
+#undoie{
+    float: left;
+    margin-top: 3.9%;
+    margin-left: -4.7%;
+}
+
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.rollbtn {
+    margin-left: 11%;
+    margin-top: -1%;
+}
+
+
+/* timer */
+:root {
+    --primary: rgb(220, 34, 13);
+    --dark: linear-gradient(0deg, #84A7A1 0%, #84A7A1 100%);
+    ;
+    --darkdark: linear-gradient(0deg, #84A7A1 0%, #84A7A1 100%);
+    ;
+    
+    /*--dark: linear-gradient(0deg, rgba(255, 229, 128, 1) 0%, rgba(250, 244, 183, 1) 100%);
+    ;
+    --darkdark: linear-gradient(0deg, rgba(255, 229, 128, 1) 0%, rgba(250, 244, 183, 1) 100%);
+    ;
+    --light: black;*/
+}
+
+.watchbody {
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: 'Chakra Petch', sans-serif;
+    margin-right: 67.5%;
+}
+
+.watch {
+    text-align: center;
+    background-color: var(--darkdark);
+    width: 100%;
+    max-width: 360px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.watch .time {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    color: #FFF;
+    background-color: var(--primary);
+
+    transition: 0.4s;
+    user-select: none;
+}
+
+.controls button:hover {
+    opacity: 0.7;
+}
+
+.controls button:active {
+    background-color: var(--dark);
+}
+
+.turntxt {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 7mm;
+    margin-left: 15%;
+}
+
+.vertical {
+    border-left: 2px solid black;
+    height: 900px;
+    position: absolute;
+    left: 35%;
+    top: -5%;
+}
+
+.hori{
+    background-color: black;
+    height: 2px;
+    border: none;
+    width: 600px;
+    position: absolute;
+    right: 65%;
+}
+
+.players {
+    position: absolute;
+    top: 83vmin; /*83min*/
+    left: 3vmin;
+    height: 4vmin;
+    width: 4vmin;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: left 4s;
+    transition: top 4s;
+    transition-duration: 0.4s;
+    transition-property: margin;
+}
+
+.players:nth-child(1) {
+    background-color:  rgb(142, 142, 142);
+}
+
+.players:nth-child(2) {
+    background-color: yellow;
+}
+
+.players:nth-child(3) {
+    background-color: green;
+}
+
+.players:nth-child(4) {
+    background-color: white;
+}
+
+.players:nth-child(5) {
+    background-color: purple;
+}
+
+.players:nth-child(6) {
+    background-color: black;
+}
+
+.players:nth-child(7) {
+    background-color: darkblue;
+}
+
+.players:nth-child(8) {
+    background-color: rgb(255, 88, 230);
+}
+
+.players:nth-child(9) {
+    background-color: rgb(0, 255, 251);
+}
+
+.players:nth-child(10) {
+    background-color: rgb(0, 255, 136);
+}
+
+/* ladders */
+#main img {
+    position: absolute;
+}
+
+
+#l1 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 65%;
+    margin-left: 23%;
+    height: 20vmin;
+    width: 15vmin;
+}
+
+#l2 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 54%;
+    margin-left: 52%;
+    height: 15vmin;
+    width: 15vmin;
+}
+
+#l3 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 36%;
+    margin-left: 84%;
+    height: 22vmin;
+    width: 15vmin;
+}
+
+#l4 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 20%;
+    margin-left: 72%;
+    height: 22vmin;
+    width: 15vmin;
+}
+
+#l5 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 1%;
+    margin-left: 52%;
+    height: 23.5vmin;
+    width: 15vmin;
+}
+
+#l6 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 1%;
+    margin-left: 2%;
+    height: 24vmin;
+    width: 15vmin;
+}
+
+#l7 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 28%;
+    margin-left: 12.5%;
+    height: 32vmin;
+    width: 15vmin;
+}
